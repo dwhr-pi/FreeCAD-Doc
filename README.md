@@ -1,4 +1,4 @@
-# FreeCAD-Wiki als PDF
+# FreeCAD-Wiki als PDF-Datei
 
 Diese Suite von Werkzeugen kann verwendet werden, um eine lokale Kopie aus dem FreeCAD-Wiki abzurufen und sie dann zu verwenden, um qhelp- und pdf-Dateien zu generieren.
 Das Herunterladen des gesamten Wikis ist jetzt ein riesiger Vorgang, anfällig für Netzwerkfehler, also wurde es in zwei Teile geteilt, einen, um eine Liste der herunterzuladenden Dateien abzurufen, und einen anderen, um die Dateien tatsächlich herunterzuladen.
