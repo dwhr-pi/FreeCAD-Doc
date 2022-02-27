@@ -8,6 +8,33 @@
 []()
 []()
 
+Diese Suite von Werkzeugen kann verwendet werden, um eine lokale Kopie aus dem FreeCAD-Wiki abzurufen und sie dann zu verwenden, um qhelp- und pdf-Dateien zu generieren.
+Das Herunterladen des gesamten Wikis ist jetzt ein riesiger Vorgang, anfällig für Netzwerkfehler, also wurde es in zwei Teile geteilt, einen, um eine Liste der herunterzuladenden Dateien abzurufen, und einen anderen, um die Dateien tatsächlich herunterzuladen.
+
+1) Führen Sie "buildwikiindex.py" aus, um eine Indexdatei zu erstellen, die eine Liste aller herunterzuladenden Dateien enthält
+
+2) Führen Sie "downloadwiki.py" aus. Wenn die Verbindung unterbrochen wird, führen Sie es erneut aus, die bereits heruntergeladenen Dateien werden übersprungen.
+
+3) Führen Sie "buildqhelp.py" aus, um die Dateien freecad.qhc und freecad.qch zu generieren
+
+4) Führen Sie "buildpdf.py" aus, um freecad.pdf zu generieren (wkhtmltopdf muss installiert sein)
+
+5) die qhelp-Dateien können mit "assistant -collectionFile freecad.qhc" getestet werden
+
+6) Wenn Sie bereits das gesamte Wiki heruntergeladen haben, führen Sie unmittelbar danach "update.py" aus, um eine Liste mit Revisions-IDs für jede Seite zu erstellen.
+
+7) Sobald die anfängliche Revisionsliste erstellt wurde, kann das Skript "update.py" jederzeit in der Zukunft ausgeführt werden, um nach Seiten zu suchen, die sich seit der gespeicherten Revisions-ID geändert haben. Das Skript soll zweimal ausgeführt werden, einmal, um eine Liste der geänderten Seiten zu erhalten, und ein weiteres, um die geänderten Seiten (und alle ihre Abhängigkeiten) erneut herunterzuladen.
+
+8) Um die generierte freecad.qch in Teile aufzuteilen, die kleiner als 50 MB sind (Github-Grenze): split -d --byte=49M localwiki/freecad.qch localwiki/freecad.qch.part
+
+9) Um die Teile wieder zusammenzufügen (zum Testen): cat localwiki/freecad.qch.part* >> test.qch Überprüfen Sie dann, ob test.qch dieselbe md5-Nummer wie localwiki/freecad.qch hat
+
+10) Zum Testen: assistant -collectionFile localwiki/freecad.qhc
+
+
+
+
+
 This suite of tools can be used to retrieve a local copy from the FreeCAD wiki and then use it to generate qhelp and pdf files.  
 The downloading of the entire wiki is now a huge operation, prone to network errors, so it has been cut into 2 parts, one to retrieve a list of files to download and another to actually download the files.  
 
