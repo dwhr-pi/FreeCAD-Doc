@@ -19,17 +19,17 @@ Das Herunterladen des gesamten Wikis ist jetzt ein riesiger Vorgang, anfällig f
 
 2) Führen Sie `downloadwiki.py` aus. Wenn die Verbindung unterbrochen wird, führen Sie es erneut aus, die bereits heruntergeladenen Dateien werden übersprungen.
 
-3) Führen Sie `buildqhelp.py` aus, um die Dateien freecad.qhc und freecad.qch zu generieren
+3) Führen Sie `buildqhelp.py` aus, um die Dateien `freecad.qhc` und `freecad.qch` zu generieren
 
-4) Führen Sie `buildpdf.py` aus, um freecad.pdf zu generieren (wkhtmltopdf muss installiert sein)
+4) Führen Sie `buildpdf.py` aus, um `freecad.pdf` zu generieren (wkhtmltopdf muss installiert sein)
 
 5) die qhelp-Dateien können mit `assistant -collectionFile freecad.qhc` getestet werden
 
 6) Wenn Sie bereits das gesamte Wiki heruntergeladen haben, führen Sie unmittelbar danach `update.py` aus, um eine Liste mit Revisions-IDs für jede Seite zu erstellen.
 
-7) Sobald die anfängliche Revisionsliste erstellt wurde, kann das Skript "update.py" jederzeit in der Zukunft ausgeführt werden, um nach Seiten zu suchen, die sich seit der gespeicherten Revisions-ID geändert haben. Das Skript soll zweimal ausgeführt werden, einmal, um eine Liste der geänderten Seiten zu erhalten, und ein weiteres, um die geänderten Seiten (und alle ihre Abhängigkeiten) erneut herunterzuladen.
+7) Sobald die anfängliche Revisionsliste erstellt wurde, kann das Skript `update.py` jederzeit in der Zukunft ausgeführt werden, um nach Seiten zu suchen, die sich seit der gespeicherten Revisions-ID geändert haben. Das Skript soll zweimal ausgeführt werden, einmal, um eine Liste der geänderten Seiten zu erhalten, und ein weiteres, um die geänderten Seiten (und alle ihre Abhängigkeiten) erneut herunterzuladen.
 
-8) Um die generierte `freecad.qch` in Teile aufzuteilen, die kleiner als 50 MB sind (Github-Grenze): `split -d --byte=49M localwiki/freecad.qch localwiki/freecad.qch.part`
+8) Um die generierte `freecad.qch` in Teile aufzuteilen, die kleiner als 50 MB sind (Github-Grenze): ```split -d --byte=49M localwiki/freecad.qch localwiki/freecad.qch.part```
 
 9) Um die Teile (zum Testen) wieder zusammenzufügen: `cat localwiki/freecad.qch.part* >> test.qch` Überprüfen Sie dann, ob `test.qch` dieselbe md5-Nummer wie `localwiki/freecad.qch` hat
 
