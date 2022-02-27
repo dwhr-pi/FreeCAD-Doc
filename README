@@ -1,9 +1,15 @@
-this suite of tools can be used to retrieve a local copy
-from the FreeCAD wiki and then use it to generate qhelp
-and pdf files. The downloading of the entire wiki is now
-a huge operation, prone to network errors, so it has been
-cut into 2 parts, one to retrieve a list of files to
-download and another to actually download the files.
+[FreeCAD 0.18 Grundlagen #0 Erste Schritte in FreeCAD - CAD Anfänger Tutorial (Deutsch)](https://www.youtube.com/watch?v=rTvgCcOXfuw)
+[FreeCAD 0.18 Grundlagen #1 Saubere Skizzen im Sketcher erstellen - CAD Anfänger Tutorial (Deutsch)](https://www.youtube.com/watch?v=OQodi9WOou4)
+[FreeCAD 0.19 Grundkurs #1 - Dein Start in FreeCAD (DE)](https://www.youtube.com/watch?v=8tvBLCdyjI4)
+[FreeCAD 0.19 Grundkurs #2 - Saubere Skizzen in FreeCAD (DE)](https://www.youtube.com/watch?v=wMkaVCYNrcA)
+[FreeCAD 0.19 Grundkurs #3 - Skizzen für Fortgeschrittene (DE)](https://www.youtube.com/watch?v=iZFet4KjVE8)
+[FreeCAD 0.19 Grundkurs #4 - Abschluss Sketcher (DE)](https://www.youtube.com/watch?v=D3VWkC6DAM4)
+[FreeCAD 0.19 Grundkurs #5 - Stabile Modelle im Part Design von Beginn an (DE)](https://www.youtube.com/watch?v=OfVXgKyfVOg)
+[]()
+[]()
+
+This suite of tools can be used to retrieve a local copy from the FreeCAD wiki and then use it to generate qhelp and pdf files.  
+The downloading of the entire wiki is now a huge operation, prone to network errors, so it has been cut into 2 parts, one to retrieve a list of files to download and another to actually download the files.  
 
 1) run "buildwikiindex.py" to build an index file containing
    a list of all the files to download
