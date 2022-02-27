@@ -37,4 +37,4 @@ Weitere Kurse findet man in der Youtube Playliste.
 
 ## URLs
 [FreeCAD-documentation](https://github.com/dwhr-pi/FreeCAD-documentation/edit/main/README.md)  
-[FreeCAD-Doc](https://github.com/dwhr-pi/FreeCAD-Doc/edit/master/README.md) 
+Original: [FreeCAD-Doc](https://github.com/FreeCAD/FreeCAD-Doc) 
