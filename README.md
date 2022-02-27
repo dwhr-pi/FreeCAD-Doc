@@ -6,7 +6,7 @@
 [FreeCAD 0.19 Grundkurs #4 - Abschluss Sketcher (DE)](https://www.youtube.com/watch?v=D3VWkC6DAM4)  
 [FreeCAD 0.19 Grundkurs #5 - Stabile Modelle im Part Design von Beginn an (DE)](https://www.youtube.com/watch?v=OfVXgKyfVOg)  
 []()
-[]()
+[FreeCAD-DocPublic](https://github.com/dwhr-pi/FreeCAD-Doc/edit/master/README.md)
 
 Diese Suite von Werkzeugen kann verwendet werden, um eine lokale Kopie aus dem FreeCAD-Wiki abzurufen und sie dann zu verwenden, um qhelp- und pdf-Dateien zu generieren.
 Das Herunterladen des gesamten Wikis ist jetzt ein riesiger Vorgang, anfällig für Netzwerkfehler, also wurde es in zwei Teile geteilt, einen, um eine Liste der herunterzuladenden Dateien abzurufen, und einen anderen, um die Dateien tatsächlich herunterzuladen.
