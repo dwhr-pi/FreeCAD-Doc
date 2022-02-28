@@ -35,6 +35,8 @@ Das Herunterladen des gesamten Wikis ist jetzt ein riesiger Vorgang, anfällig f
 [FreeCAD 0.19 Grundkurs #5 - Stabile Modelle im Part Design von Beginn an (DE)](https://www.youtube.com/watch?v=OfVXgKyfVOg)  
 Weitere Kurse findet man in der Youtube Playliste.  
 
+[FreeCAD Facebook-Gruppe](https://www.facebook.com/groups/416491481766626)
+
 ## URLs
 [FreeCAD-documentation](https://github.com/dwhr-pi/FreeCAD-documentation/edit/main/README.md)  
 Original: [FreeCAD-Doc](https://github.com/FreeCAD/FreeCAD-Doc) 
